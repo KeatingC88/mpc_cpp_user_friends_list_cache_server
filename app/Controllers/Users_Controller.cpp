@@ -55,7 +55,7 @@ namespace App::Controllers {
                 client.sadd(decrypted_user_id, { decrypted_friend_id });
                 client.sync_commit();
 
-                return crow::response(200, AES.Encrypt("Set Friend Complete.");
+                return crow::response(200, AES.Encrypt("Set Friend Complete."));
 
             } catch (const std::exception& e) {
 
